@@ -53,12 +53,12 @@ class SDLMixerConan(ConanFile):
 		if self.settings.os == "Windows":
 			static = "-static" if self.options.shared else ""
 			self.cpp_info.libs = [
-				f"SDL2_mixer{static}{postfix}.lib"
+				f"SDL_mixer{static}{postfix}.lib"
 			]
 		elif self.settings.os == "Linux":
 			extension = "so" if self.options.shared else "a"
 			self.cpp_info.libs = [
-				f"SDL2_mixer{static}{postfix}.{extension}"
+				f"SDL_mixer{static}{postfix}.{extension}"
 			]
 		
 		self.cpp_info.libdirs = ['lib']
