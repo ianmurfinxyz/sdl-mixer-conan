@@ -1,10 +1,10 @@
 from conans import ConanFile, CMake, tools
 import os, shutil
 
-class SDLImageConan(ConanFile):
+class SDLMixerConan(ConanFile):
 	name = "sdl-mixer"
 	version = "2.0.4"
-	description = "Image file loading library for SDL"
+	description = "SDL_mixer is a sample multi-channel audio mixer library"
 	homepage = "https://www.libsdl.org/projects/SDL_mixer/"
 	license = "Zlib https://www.libsdl.org/license.php"
 	url="https://github.com/ianmurfinxyz/sdl-mixer-conan"
