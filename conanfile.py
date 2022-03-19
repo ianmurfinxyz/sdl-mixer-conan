@@ -38,7 +38,6 @@ class SDLMixerConan(ConanFile):
 		self.copy("SDL_mixer.h", dst="include", src=self.source_subfolder)
 		self.copy("*.lib", dst="lib", keep_path=False)
 		self.copy("*.a", dst="lib", keep_path=False)
-		self.copy("*.pdb", dst="lib", keep_path=False)
 		self.copy("*.exp", dst="lib", keep_path=False)
 		self.copy("*.dll", dst="bin",keep_path=False)
 		self.copy("*.so", dst="bin", keep_path=False)
