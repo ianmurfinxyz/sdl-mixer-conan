@@ -50,7 +50,7 @@ class SDLMixerConan(ConanFile):
 		postfix = "d" if build_type == "Debug" else ""
 		
 		if self.settings.os == "Windows":
-			static = "-static" if self.options.shared else ""
+			static = "-static" if not self.options.shared else ""
 			self.cpp_info.libs = [
 				f"SDL_mixer{static}{postfix}.lib"
 			]
